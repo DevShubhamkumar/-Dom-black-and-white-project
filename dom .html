@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+        
+    </style>
+</head>
+
+
+<body>
+    
+    <script>
+        
+        // Create Navbar with Buttons
+        const navbar = document.createElement('div');
+        navbar.className = 'navbar';
+        navbar.style.backgroundColor = 'rgb(90, 90, 90)';
+        navbar.style.color = 'white';
+      
+        navbar.style.padding = '20px';
+        
+       
+        const logo = document.createElement('div');
+        // const att = document.createAttribute('id','logo');
+        
+        logo.textContent = 'JS';
+        logo.setAttribute('name','mylogo');
+
+        navbar.appendChild(logo);
+        
+        logo.style.display = 'inline';
+        logo.style.textAlign = ('left');
+        logo.style.padding = '15px';
+        logo.style.marginRight = '60%';
+        // document,getElementById(mylogo).style.color = 'red';
+
+        // const x = document.getElementsByName('mylogo');
+        // x.style.fontSize = "30px";
+        // // x.style.color = "#00ff00";
+
+        
+        // logo.setAttribute('name','mylogo');
+        // document.getElementById('mylogo').style.color = 'red';
+
+
+        logo.style.fontSize = ('100px');
+        logo.style.color = ('skyblue');
+        logo.style.fontWeight = ('900');
+        logo.style.marginTop = ('10px');
+        
+        logo.style.fontSize = ('20px');
+        logo.style.textShadow = '2px 2px 10px black'; 
+        logo.style.margin = ('left');
+        
+
+
+        
+       
+        const homeButton = document.createElement('button');
+        homeButton.textContent = 'Home';
+        navbar.appendChild(homeButton);
+        homeButton.setAttribute('id', 'Home');
+        homeButton.style.border = 'none';
+        homeButton.style.borderRadius = '10px';
+        homeButton.style.border = 'none';
+        homeButton.style.padding = '10px';
+        homeButton.style.marginRight = '50px';
+        homeButton.style.backgroundColor = 'rgb(90, 90, 90)';
+        homeButton.style.color = 'white';
+        homeButton.style.boxShadow = '2px 3px 10px black';
+
+
+        homeButton.addEventListener('mouseover', mouseOver);
+homeButton.addEventListener('mouseout', mouseOut);
+
+function mouseOver() {
+    homeButton.style.backgroundColor = 'rgb(60, 60, 60)';
+    homeButton.style.boxShadow = '2px 3px 10px red';
+}
+
+function mouseOut() {
+    homeButton.style.backgroundColor = 'rgb(90, 90, 90)';
+    homeButton.style.boxShadow = '2px 3px 10px black';
+    
+}
+
+
+
+        const aboutButton = document.createElement('button');
+        aboutButton.textContent = 'About';
+        navbar.appendChild(homeButton);
+        navbar.appendChild(aboutButton);
+        
+
+        aboutButton.setAttribute('id', 'about')
+        aboutButton.style.border = 'none'
+        aboutButton.style.borderRadius = '10px'
+        aboutButton.style.border = 'none'
+        aboutButton.style.padding = '10px';
+        aboutButton.style.textAlign= 'right';
+        aboutButton.style.marginRight = '50px';
+        aboutButton.style.backgroundColor = 'rgb(90, 90, 90)';
+        aboutButton.style.color = 'white';
+        aboutButton.style.boxShadow = '2px 3px 10px black';
+
+
+        aboutButton.addEventListener('mouseover', mouseOver1);
+aboutButton.addEventListener('mouseout', mouseOut1);
+
+function mouseOver1() {
+    aboutButton.style.backgroundColor = 'rgb(60, 60, 60)';
+    aboutButton.style.boxShadow = '2px 3px 10px red';
+}
+
+function mouseOut1() {
+    aboutButton.style.backgroundColor = 'rgb(90, 90, 90)';
+    aboutButton.style.boxShadow = '2px 3px 10px black';
+    
+}
+//  ---------------service--------------------       
+
+        const servicesButton = document.createElement('button');
+        servicesButton.textContent = 'Services';
+        navbar.appendChild(servicesButton);
+
+        servicesButton.setAttribute('id', 'service')
+        servicesButton.style.border = 'none'
+        servicesButton.style.borderRadius = '10px'
+        servicesButton.style.border = 'none'
+        servicesButton.style.padding = '10px';
+        servicesButton.style.marginRight= '50px';
+        servicesButton.style.backgroundColor = 'rgb(90, 90, 90)';
+        servicesButton.style.color = 'white';
+        servicesButton.style.boxShadow = '2px 3px 10px black';
+
+
+        servicesButton.addEventListener('mouseover', mouseOver2);
+servicesButton.addEventListener('mouseout', mouseOut2);
+
+function mouseOver2() {
+    servicesButton.style.backgroundColor = 'rgb(60, 60, 60)';
+    servicesButton.style.boxShadow = '2px 3px 10px red';
+}
+
+function mouseOut2() {
+    servicesButton.style.backgroundColor = 'rgb(90, 90, 90)';
+    servicesButton.style.boxShadow = '2px 3px 10px black';
+    
+}
+
+// -------------------------contact
+
+
+        const contactButton = document.createElement('button');
+        contactButton.textContent = 'Contact';
+        navbar.appendChild(contactButton);
+
+        contactButton.setAttribute('id', 'contact')
+        contactButton.style.border = 'none'
+        contactButton.style.borderRadius = '10px'
+        contactButton.style.border = 'none'
+        contactButton.style.padding = '10px';
+        contactButton.style.marginRight = '50px';
+        contactButton.style.backgroundColor = 'rgb(90, 90, 90)';
+        contactButton.style.color = 'white';
+        contactButton.style.boxShadow = '2px 3px 10px black';
+
+
+        contactButton.addEventListener('mouseover', mouseOver3);
+contactButton.addEventListener('mouseout', mouseOut3);
+
+function mouseOver3() {
+    contactButton.style.backgroundColor = 'rgb(60, 60, 60)';
+    contactButton.style.boxShadow = '2px 3px 10px red';
+}
+
+function mouseOut3() {
+    contactButton.style.backgroundColor = 'rgb(90, 90, 90)';
+    contactButton.style.boxShadow = '2px 3px 10px black';
+    
+}
+
+
+        document.body.appendChild(navbar);
+
+// Create Hero Section with Heading
+const heroSection = document.createElement('div');
+heroSection.className = 'hero-section';
+heroSection.style.backgroundImage = "url('lorem.jpeg')";
+heroSection.style.backgroundSize = 'cover';
+heroSection.style.backgroundAttachment = 'fixed';
+heroSection.style.width = '100%';
+heroSection.style.height = '550px';
+heroSection.style.backgroundPosition = 'center';
+
+
+
+// Create the heading element and style it
+const heading = document.createElement('h1');
+heading.textContent = 'Welcome to MY JS Website';
+heading.style.fontFamily = 'Arial, sans-serif'; 
+heading.style.fontSize = '60px'; 
+heading.style.textShadow = '2px 2px 5px red'; 
+heading.style.margin = '20px 0'; 
+heading.style.textAlign = 'center';
+heading.style.padding = '100px';
+heading.style.color = 'black';
+heading.style.fontWeight = '900';
+
+
+
+heroSection.appendChild(heading);
+
+document.body.appendChild(heroSection);
+
+      
+document.body.appendChild(heroSection);
+
+
+
+
+
+// Create About Us Section with Heading and Paragraphs
+
+
+const aboutUsSection = document.createElement('div');
+aboutUsSection.style.backgroundColor = 'rgb(180, 180, 180)';
+aboutUsSection.style.padding = '20px';
+aboutUsSection.style.boxShadow = '0 0 10px black';
+
+
+const aboutUsHeading = document.createElement('h2');
+aboutUsHeading.textContent = 'About Us';
+aboutUsHeading.style.textAlign = 'center';
+aboutUsHeading.style.fontSize = '38px';
+aboutUsHeading.style.fontWeight = '800';
+aboutUsHeading.style.background = 'white';
+aboutUsHeading.style.borderRadius = '10px';
+aboutUsHeading.style.boxShadow = '0 0 10px black';
+aboutUsHeading.style.fontFamily = 'Arial, sans-serif';
+
+aboutUsHeading.style.textShadow = '0px 0px 5px red';
+
+
+//  first paragraph
+const aboutUsP1 = document.createElement('p');
+aboutUsP1.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat vestibulum lectus mauris ultrices eros. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Lacus luctus accumsan tortor posuere ac ut consequat semper. Diam vel quam elementum pulvinar etiam non. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Nibh nisl condimentum id venenatis. Laoreet sit amet cursus sit amet dictum sit amet justo. Tempor orci dapibus ultrices in iaculis nunc sed.';
+aboutUsP1.style.fontSize = '25px';
+
+//  second paragraph
+const aboutUsP2 = document.createElement('p');
+aboutUsP2.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat vestibulum lectus mauris ultrices eros. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Lacus luctus accumsan tortor posuere ac ut consequat semper. Diam vel quam elementum pulvinar etiam non. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Nibh nisl condimentum id venenatis. Laoreet sit amet cursus sit amet dictum sit amet justo. Tempor orci dapibus ultrices in iaculis nunc sed.';
+aboutUsP2.style.fontSize = '25px';
+
+
+aboutUsSection.appendChild(aboutUsHeading);
+aboutUsSection.appendChild(aboutUsP1);
+aboutUsSection.appendChild(aboutUsP2);
+
+
+document.body.appendChild(aboutUsSection);
+
+
+
+        
+        // Create Contact Form
+
+        const contactSection = document.createElement('div');
+contactSection.setAttribute('id', 'contactdiv');
+
+const contactHead = document.createElement('h2');
+contactHead.setAttribute('id', 'contacthead');
+
+contactHead.textContent = 'Contact Me';
+contactHead.style.textAlign = 'center';
+contactHead.style.fontSize = '38px';
+contactHead.style.fontWeight = '800';
+contactHead.style.boxShadow = '0 0 10px black';
+contactHead.style.fontFamily = 'Arial, sans-serif';
+contactHead.style.textShadow = '0px 0px 5px red';
+contactHead.style.margin = '20px';
+contactHead.style.borderRadius = '10px';
+
+const contactForm = document.createElement('form');
+contactForm.style.maxWidth = '400px';
+contactForm.style.margin = '100px auto';
+contactForm.style.textAlign = 'left';
+contactForm.style.border = '1px solid #ccc';
+contactForm.style.borderRadius = '10px';
+contactForm.style.padding = '30px';
+contactForm.style.fontSize = '20px'; 
+contactForm.style.fontWeight = '400'; 
+
+contactForm.innerHTML = `
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    <input type="submit" value="Submit">`;
+
+document.body.appendChild(contactSection);
+contactSection.appendChild(contactHead);
+contactSection.appendChild(contactForm);
+
+        // Create Map
+        const map = document.createElement('div');
+        // map.style.height = '300px';
+        map.style.padding = "20px";
+        map.style.maxWidth = "80%";
+        map.style.margin = "auto";
+       
+        map.style.backgroundColor = '#ccc';
+        map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d53710.22758099273!2d74.8617728!3d32.7155712!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1699347773952!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+        contactSection.appendChild(map);
+
+        // Create Footer with Copyright Note
+        const footer = document.createElement('div');
+        footer.className = 'footer';
+        footer.style.backgroundColor = '#333';
+        footer.style.color = 'white';
+        footer.style.padding = '20px'; 
+        footer.style.fontSize = '20px'; 
+        footer.style.textAlign = 'center';
+        footer.style.fontWeight = '900';
+        footer.style.marginTop = '20px';
+
+        footer.textContent = '\u00A9  Shubham Kumar 2023 . All rights reserved.';
+        document.body.appendChild(footer);
+
+        // Helper function to create sections
+        function createSection(title, backgroundColor) {
+            const section = document.createElement('div');
+            section.className = 'section';
+            section.style.backgroundColor = backgroundColor;
+            section.style.padding = '50px';
+            section.style.textAlign = 'center';
+
+            const sectionTitle = document.createElement('h2');
+            sectionTitle.textContent = title;
+
+            section.appendChild(sectionTitle);
+            return section;
+        }
+    </script>
+</body>
+
+</html>
+
